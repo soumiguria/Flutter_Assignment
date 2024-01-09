@@ -38,16 +38,39 @@ class Workout extends StatelessWidget {
                   ),
                 ),
                 const Positioned(
-                  child: Padding(
-                    padding: EdgeInsets.all(25.0),
-                    child: Text(
-                      'Best Quarantine\nWorkout',
-                      style: TextStyle(
-                        fontSize: 18,
-                        color: Colors.white,
-                        fontWeight: FontWeight.bold,
+                  child: Column(
+                    children: [
+                      Padding(
+                        padding: EdgeInsets.all(25.0),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              'Best Quarantine\nWorkout',
+                              style: TextStyle(
+                                fontSize: 18,
+                                color: Colors.white,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                            SizedBox(height: 50),
+                            Row(
+                              children: [
+                                Text(
+                                  'See more',
+                                  style: TextStyle(
+                                    fontSize: 10,
+                                    fontWeight: FontWeight.bold,
+                                    color: Color(0xFFBBF246),
+                                  ),
+                                ),
+                                Icon(Icons.chevron_right, color: Color(0xFFBBF246), size: 20,),
+                              ],
+                            )
+                          ],
+                        ),
                       ),
-                    ),
+                    ],
                   ),
                 ),
               ],
