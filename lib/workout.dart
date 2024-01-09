@@ -10,7 +10,7 @@ class Workout extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Padding(
-            padding: const EdgeInsets.all(40.0),
+            padding: EdgeInsets.only(top: 40.0, left: 20.0, right: 20.0),
             child: Stack(
               alignment: Alignment.topLeft,
               children: [
@@ -41,7 +41,7 @@ class Workout extends StatelessWidget {
                   child: Column(
                     children: [
                       Padding(
-                        padding: EdgeInsets.all(25.0),
+                        padding: EdgeInsets.only(top: 25.0, left: 20.0, right: 20.0),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
@@ -75,6 +75,12 @@ class Workout extends StatelessWidget {
                 ),
               ],
             ),
+          ),
+          Padding(
+            padding: EdgeInsets.only(top: 25.0, left: 20.0, right: 20.0),
+            child: Align(
+              alignment: Alignment.centerLeft,
+              child: const Text('Best for you', style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),)),
           ),
         ],
       ),
