@@ -30,9 +30,9 @@ class FastWarmup extends StatelessWidget {
             ClipRRect(
               borderRadius: BorderRadius.circular(8.0),
               child: Container(
-                width: 60, // Adjust the width of the image container as needed
+                width: 60, 
                 height:
-                    60, // Adjust the height of the image container as needed
+                    60, 
                 child: Image.asset(
                   image,
                   fit: BoxFit.cover,

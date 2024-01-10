@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:pyramid_developers/best_for_you.dart';
 import 'package:pyramid_developers/fast_warmup.dart';
+import 'package:pyramid_developers/navbar.dart';
 
 class Workout extends StatelessWidget {
   const Workout({super.key});
@@ -302,66 +303,7 @@ class Workout extends StatelessWidget {
                 ),
               ),
             ),
-            // Positioned(
-            //   bottom: 0,
-            //   left: 0,
-            //   right: 0,
-            //   child: BottomNavigationBar(
-            //     items: const [
-            //       BottomNavigationBarItem(
-            //         icon: Icon(Icons.home_filled),
-            //         label: 'Home',
-            //       ),
-            //       BottomNavigationBarItem(
-            //         icon: Icon(Icons.explore),
-            //         label: 'Explore',
-            //       ),
-            //       BottomNavigationBarItem(
-            //         icon: Icon(Icons.graphic_eq_outlined),
-            //         label: 'Statistics',
-            //       ),
-            //       BottomNavigationBarItem(
-            //         icon: Icon(Icons.person),
-            //         label: 'Profile',
-            //       ),
-            //     ],
-            //   ),
-            // ),
-
-            Positioned(
-              bottom: 0,
-              left: 0,
-              right: 0,
-              child: Container(
-                width: 380,
-                decoration: BoxDecoration(
-                  color: Color(0xFF192126),
-                  borderRadius: BorderRadius.all(Radius.circular(40.0)),
-                ),
-                child: BottomNavigationBar(
-                  backgroundColor: Colors.transparent,
-                  items: const [
-                    BottomNavigationBarItem(
-                      icon: Icon(Icons.home),
-                      label: 'Home',
-                    ),
-                    BottomNavigationBarItem(
-                      icon: Icon(Icons.search),
-                      label: 'Search',
-                    ),
-                    BottomNavigationBarItem(
-                      icon: Icon(Icons.person),
-                      label: 'Profile',
-                    ),
-                    // BottomNavigationBarItem(
-                    //   icon: Icon(Icons.add), // Additional icon
-                    //   label: 'Add',
-                    // ),
-                  ],
-                ),
-              ),
-            ),
-
+            CustomNavBar()
           ],
         ),
       ),
