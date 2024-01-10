@@ -42,7 +42,7 @@ class Workout extends StatelessWidget {
                       ),
                     ),
                   ),
-                  const Positioned(
+                  Positioned(
                     child: Column(
                       children: [
                         Padding(
@@ -62,18 +62,28 @@ class Workout extends StatelessWidget {
                               SizedBox(height: 50),
                               Row(
                                 children: [
-                                  Text(
-                                    'See more',
-                                    style: TextStyle(
-                                      fontSize: 10,
-                                      fontWeight: FontWeight.bold,
-                                      color: Color(0xFFBBF246),
+                                  GestureDetector(
+                                    onTap: () {
+                                      print('Detected');
+                                    },
+                                    child: Text(
+                                      'See more',
+                                      style: TextStyle(
+                                        fontSize: 10,
+                                        fontWeight: FontWeight.bold,
+                                        color: Color(0xFFBBF246),
+                                      ),
                                     ),
                                   ),
-                                  Icon(
-                                    Icons.chevron_right,
-                                    color: Color(0xFFBBF246),
-                                    size: 20,
+                                  GestureDetector(
+                                    onTap: () {
+                                      print('detected1');
+                                    },
+                                    child: Icon(
+                                      Icons.chevron_right,
+                                      color: Color(0xFFBBF246),
+                                      size: 20,
+                                    ),
                                   ),
                                 ],
                               )
@@ -154,98 +164,115 @@ class Workout extends StatelessWidget {
                           children: [
                             Container(
                               height: 100,
-                              width: 100,
+                              width: 130,
                               decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(12.0),
                                 color: Color(0xFFBBF246),
                               ),
-                              child: Align(
-                                alignment: Alignment.bottomLeft,
-                                child: Padding(
-                                  padding: const EdgeInsets.all(8.0),
-                                  child: Text('Plank\nChallenge',
-                                      style: TextStyle(
-                                        color: Colors.black,
-                                      )),
-                                ),
+                              child: Stack(
+                                children: [
+                                  Positioned.fill(
+                                    child: Align(
+                                      alignment: Alignment.center,
+                                      child: Icon(
+                                        Icons.heat_pump_outlined,
+                                        color: Colors.grey.shade200,
+                                        size:
+                                            80, 
+                                      ),
+                                    ),
+                                  ),
+                                  Align(
+                                    alignment: Alignment.bottomLeft,
+                                    child: Padding(
+                                      padding: const EdgeInsets.all(8.0),
+                                      child: Text(
+                                        'Plank\nChallenge',
+                                        style: TextStyle(
+                                          color: Colors.black,
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                ],
                               ),
                             ),
+
                             SizedBox(width: 10),
                             Container(
                               height: 100,
-                              width: 100,
+                              width: 130,
                               decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(12.0),
                                 color: Color(0xFF192126),
                               ),
-                              child: Align(
-                                alignment: Alignment.bottomLeft,
-                                child: Padding(
-                                  padding: const EdgeInsets.all(8.0),
-                                  child: Text('Sprint\nChallenge',
-                                      style: TextStyle(
-                                        color: Colors.white,
-                                      )),
-                                ),
+                              child: Stack(
+                                children: [
+                                  Positioned.fill(
+                                    child: Align(
+                                      alignment: Alignment.center,
+                                      child: Icon(
+                                        Icons.sports_gymnastics_outlined,
+                                        color: Colors.grey.shade200,
+                                        size:
+                                            80, 
+                                      ),
+                                    ),
+                                  ),
+                                  Align(
+                                    alignment: Alignment.bottomLeft,
+                                    child: Padding(
+                                      padding: const EdgeInsets.all(8.0),
+                                      child: Text(
+                                        'Sprint\nChallenge',
+                                        style: TextStyle(
+                                          color: Colors.white,
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                ],
                               ),
                             ),
+
                             SizedBox(width: 10),
                             Container(
                               height: 100,
-                              width: 100,
+                              width: 130,
                               decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(12.0),
-                                color: Colors.white,
+                                color: Color(0xFFFFFFFF),
                               ),
-                              child: Align(
-                                alignment: Alignment.bottomLeft,
-                                child: Padding(
-                                  padding: const EdgeInsets.all(8.0),
-                                  child: Text('Squat\nChallenge',
-                                      style: TextStyle(
-                                        color: Colors.black,
-                                      )),
-                                ),
-                              ),
-                            ),
-                            SizedBox(width: 10),
-                            Container(
-                              height: 100,
-                              width: 100,
-                              decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(12.0),
-                                color: Colors.white,
-                              ),
-                              child: Align(
-                                alignment: Alignment.bottomLeft,
-                                child: Padding(
-                                  padding: const EdgeInsets.all(8.0),
-                                  child: Text('Squat\nChallenge',
-                                      style: TextStyle(
-                                        color: Colors.black,
-                                      )),
-                                ),
+                              child: Stack(
+                                children: [
+                                  Positioned.fill(
+                                    child: Align(
+                                      alignment: Alignment.center,
+                                      child: Icon(
+                                        Icons.sports_gymnastics_outlined,
+                                        color: Color(0xFFBBF246),
+                                        size:
+                                            80, 
+                                      ),
+                                    ),
+                                  ),
+                                  Align(
+                                    alignment: Alignment.bottomLeft,
+                                    child: Padding(
+                                      padding: const EdgeInsets.all(8.0),
+                                      child: Text(
+                                        'Squat\nChallenge',
+                                        style: TextStyle(
+                                          color: Colors.black,
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                ],
                               ),
                             ),
-                            SizedBox(width: 10),
-                            Container(
-                              height: 100,
-                              width: 100,
-                              decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(12.0),
-                                color: Colors.white,
-                              ),
-                              child: Align(
-                                alignment: Alignment.bottomLeft,
-                                child: Padding(
-                                  padding: const EdgeInsets.all(8.0),
-                                  child: Text('Squat\nChallenge',
-                                      style: TextStyle(
-                                        color: Colors.black,
-                                      )),
-                                ),
-                              ),
-                            ),
+
+
                           ],
                         ),
                       ),

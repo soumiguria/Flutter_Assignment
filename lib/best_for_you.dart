@@ -41,11 +41,13 @@ class BestForYou extends StatelessWidget {
             ),
             const SizedBox(width: 8),
             Column(
+              mainAxisAlignment: MainAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
                   type,
                   style: const TextStyle(
-                    fontSize: 10,
+                    fontSize: 12,
                     fontWeight: FontWeight.bold,
                   ),
                   maxLines: 1,
@@ -55,19 +57,35 @@ class BestForYou extends StatelessWidget {
                   height: 18,
                 ),
                 const SizedBox(height: 8),
-                Text(
-                  time,
-                  style: const TextStyle(
-                    fontSize: 10,
+                Container(
+                  decoration: BoxDecoration(
+                      color: Colors.blueGrey.shade100,
+                      borderRadius: BorderRadius.circular(2)),
+                  child: Padding(
+                    padding: const EdgeInsets.all(2.0),
+                    child: Text(
+                      time,
+                      style: const TextStyle(
+                        fontSize: 10,
+                      ),
+                      maxLines: 1,
+                      overflow: TextOverflow.ellipsis,
+                    ),
                   ),
-                  maxLines: 1,
-                  overflow: TextOverflow.ellipsis,
                 ),
                 const SizedBox(height: 8),
-                Text(
-                  level,
-                  style: const TextStyle(
-                    fontSize: 10,
+                Container(
+                  decoration: BoxDecoration(
+                      color: Colors.blueGrey.shade100,
+                      borderRadius: BorderRadius.circular(2)),
+                  child: Padding(
+                    padding: const EdgeInsets.all(2.0),
+                    child: Text(
+                      level,
+                      style: const TextStyle(
+                        fontSize: 10,
+                      ),
+                    ),
                   ),
                 ),
               ],

@@ -18,9 +18,10 @@ class _CustomNavBarState extends State<CustomNavBar> {
       right: 0,
       child: Container(
         width: 380,
+        height: 60,
         decoration: BoxDecoration(
           color: Color(0xFF192126),
-          borderRadius: BorderRadius.all(Radius.circular(40.0)),
+          borderRadius: BorderRadius.all(Radius.circular(60.0)),
         ),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
