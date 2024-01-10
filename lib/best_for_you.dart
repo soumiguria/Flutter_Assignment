@@ -16,13 +16,14 @@ class BestForYou extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.only(left: 20.0, right: 20.0),
+      padding: EdgeInsets.only(left: 10.0, right: 10.0),
       child: Container(
         width: 213,
         height: 100,
         padding: const EdgeInsets.all(8.0),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(8),
+          color: Colors.white,
         ),
         child: Row(
           children: [

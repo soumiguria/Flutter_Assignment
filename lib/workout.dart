@@ -93,18 +93,23 @@ class Workout extends StatelessWidget {
                 )),
           ),
           Container(
-              height: 250,
+              height: 230,
               child: SingleChildScrollView(
                 scrollDirection: Axis.horizontal,
                 child: Column(
                   children: [
                     Row(
-                      
                       children: [
-                        BestForYou(image: 'assets/images/image63.png',
-                            type: 'Belly fat burner', time: '10 min', level: 'Beginner'),
-                        BestForYou(image: 'assets/images/image65.png',
-                            type: 'Lose Fat', time: '10 min', level: 'Beginner'),
+                        BestForYou(
+                            image: 'assets/images/image63.png',
+                            type: 'Belly fat burner',
+                            time: '10 min',
+                            level: 'Beginner'),
+                        BestForYou(
+                            image: 'assets/images/image65.png',
+                            type: 'Lose Fat',
+                            time: '10 min',
+                            level: 'Beginner'),
                       ],
                     ),
                     SizedBox(height: 10),
@@ -124,7 +129,132 @@ class Workout extends StatelessWidget {
                     ),
                   ],
                 ),
-              ))
+              )),
+          const Padding(
+            padding: EdgeInsets.only(left: 20.0, right: 20.0, bottom: 10),
+            child: Align(
+                alignment: Alignment.centerLeft,
+                child: Text(
+                  'Challenge',
+                  style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                )),
+          ),
+          Container(
+              height: 230,
+              child: SingleChildScrollView(
+                scrollDirection: Axis.horizontal,
+                child: Column(
+                  children: [
+                    SingleChildScrollView(
+                      scrollDirection: Axis.horizontal,
+                      child: Padding(
+                        padding: EdgeInsets.only(
+                            left: 20.0, right: 20.0, bottom: 10),
+                        child: Row(
+                          children: [
+                            Container(
+                              height: 100,
+                              width: 100,
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(12.0),
+                                color: Color(0xFFBBF246),
+                              ),
+                              child: Align(
+                                alignment: Alignment.bottomLeft,
+                                child: Padding(
+                                  padding: const EdgeInsets.all(8.0),
+                                  child: Text('Plank\nChallenge',
+                                      style: TextStyle(
+                                        color: Colors.black,
+                                      )),
+                                ),
+                              ),
+                            ),
+                            SizedBox(width: 10),
+                            Container(
+                              height: 100,
+                              width: 100,
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(12.0),
+                                color: Color(0xFF192126),
+                              ),
+                              child: Align(
+                                alignment: Alignment.bottomLeft,
+                                child: Padding(
+                                  padding: const EdgeInsets.all(8.0),
+                                  child: Text(
+                                    'Sprint\nChallenge',
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                    )
+                                  ),
+                                ),
+                              ),
+                            ),
+                            SizedBox(width: 10),
+                            Container(
+                              height: 100,
+                              width: 100,
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(12.0),
+                                color: Colors.white,
+                              ),
+                              child: Align(
+                                alignment: Alignment.bottomLeft,
+                                child: Padding(
+                                  padding: const EdgeInsets.all(8.0),
+                                  child: Text('Squat\nChallenge',
+                                      style: TextStyle(
+                                        color: Colors.black,
+                                      )),
+                                ),
+                              ),
+                            ),
+                            SizedBox(width: 10),
+                            Container(
+                              height: 100,
+                              width: 100,
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(12.0),
+                                color: Colors.white,
+                              ),
+                              child: Align(
+                                alignment: Alignment.bottomLeft,
+                                child: Padding(
+                                  padding: const EdgeInsets.all(8.0),
+                                  child: Text('Squat\nChallenge',
+                                      style: TextStyle(
+                                        color: Colors.black,
+                                      )),
+                                ),
+                              ),
+                            ),
+                            SizedBox(width: 10),
+                            Container(
+                              height: 100,
+                              width: 100,
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(12.0),
+                                color: Colors.white,
+                              ),
+                              child: Align(
+                                alignment: Alignment.bottomLeft,
+                                child: Padding(
+                                  padding: const EdgeInsets.all(8.0),
+                                  child: Text('Squat\nChallenge',
+                                      style: TextStyle(
+                                        color: Colors.black,
+                                      )),
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              )),
         ],
       ),
     );
