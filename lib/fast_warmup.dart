@@ -16,7 +16,7 @@ class FastWarmup extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.only(left: 10.0, right: 10.0),
+      padding: const EdgeInsets.only(left: 10.0, right: 10.0),
       child: Container(
         width: 170,
         height: 100,
@@ -53,7 +53,7 @@ class FastWarmup extends StatelessWidget {
                   maxLines: 1,
                   overflow: TextOverflow.ellipsis,
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 18,
                 ),
                 const SizedBox(height: 8),

@@ -14,7 +14,7 @@ class Workout extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Padding(
-              padding: EdgeInsets.only(top: 40.0, left: 20.0, right: 20.0),
+              padding:const EdgeInsets.only(top: 40.0, left: 20.0, right: 20.0),
               child: Stack(
                 alignment: Alignment.topLeft,
                 children: [
@@ -26,7 +26,7 @@ class Workout extends StatelessWidget {
                       borderRadius: BorderRadius.circular(20.0),
                       child: ShaderMask(
                         shaderCallback: (Rect bounds) {
-                          return LinearGradient(
+                          return const LinearGradient(
                             begin: Alignment.centerLeft,
                             end: Alignment.centerRight,
                             colors: [
@@ -46,12 +46,12 @@ class Workout extends StatelessWidget {
                     child: Column(
                       children: [
                         Padding(
-                          padding: EdgeInsets.only(
+                          padding: const EdgeInsets.only(
                               top: 25.0, left: 20.0, right: 20.0),
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Text(
+                              const Text(
                                 'Best Quarantine\nWorkout',
                                 style: TextStyle(
                                   fontSize: 18,
@@ -59,14 +59,14 @@ class Workout extends StatelessWidget {
                                   fontWeight: FontWeight.bold,
                                 ),
                               ),
-                              SizedBox(height: 50),
+                              const SizedBox(height: 50),
                               Row(
                                 children: [
                                   GestureDetector(
                                     onTap: () {
-                                      print('Detected');
+                                      // print('Detected');
                                     },
-                                    child: Text(
+                                    child: const Text(
                                       'See more',
                                       style: TextStyle(
                                         fontSize: 10,
@@ -77,9 +77,9 @@ class Workout extends StatelessWidget {
                                   ),
                                   GestureDetector(
                                     onTap: () {
-                                      print('detected1');
+                                      // print('detected1');
                                     },
-                                    child: Icon(
+                                    child: const Icon(
                                       Icons.chevron_right,
                                       color: Color(0xFFBBF246),
                                       size: 20,
@@ -107,7 +107,7 @@ class Workout extends StatelessWidget {
             ),
             Container(
                 height: 230,
-                child: SingleChildScrollView(
+                child: const SingleChildScrollView(
                   scrollDirection: Axis.horizontal,
                   child: Column(
                     children: [
@@ -159,7 +159,7 @@ class Workout extends StatelessWidget {
                     SingleChildScrollView(
                       scrollDirection: Axis.horizontal,
                       child: Padding(
-                        padding: EdgeInsets.only(left: 20.0, right: 20.0),
+                        padding: const EdgeInsets.only(left: 20.0, right: 20.0),
                         child: Row(
                           children: [
                             Container(
@@ -167,7 +167,7 @@ class Workout extends StatelessWidget {
                               width: 130,
                               decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(12.0),
-                                color: Color(0xFFBBF246),
+                                color:const  Color(0xFFBBF246),
                               ),
                               child: Stack(
                                 children: [
@@ -182,10 +182,10 @@ class Workout extends StatelessWidget {
                                       ),
                                     ),
                                   ),
-                                  Align(
+                                  const Align(
                                     alignment: Alignment.bottomLeft,
                                     child: Padding(
-                                      padding: const EdgeInsets.all(8.0),
+                                      padding: EdgeInsets.all(8.0),
                                       child: Text(
                                         'Plank\nChallenge',
                                         style: TextStyle(
@@ -198,13 +198,13 @@ class Workout extends StatelessWidget {
                               ),
                             ),
 
-                            SizedBox(width: 10),
+                            const SizedBox(width: 10),
                             Container(
                               height: 100,
                               width: 130,
                               decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(12.0),
-                                color: Color(0xFF192126),
+                                color: const Color(0xFF192126),
                               ),
                               child: Stack(
                                 children: [
@@ -219,10 +219,10 @@ class Workout extends StatelessWidget {
                                       ),
                                     ),
                                   ),
-                                  Align(
+                                  const Align(
                                     alignment: Alignment.bottomLeft,
                                     child: Padding(
-                                      padding: const EdgeInsets.all(8.0),
+                                      padding: EdgeInsets.all(8.0),
                                       child: Text(
                                         'Sprint\nChallenge',
                                         style: TextStyle(
@@ -235,15 +235,15 @@ class Workout extends StatelessWidget {
                               ),
                             ),
 
-                            SizedBox(width: 10),
+                            const SizedBox(width: 10),
                             Container(
                               height: 100,
                               width: 130,
                               decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(12.0),
-                                color: Color(0xFFFFFFFF),
+                                color: const Color(0xFFFFFFFF),
                               ),
-                              child: Stack(
+                              child: const Stack(
                                 children: [
                                   Positioned.fill(
                                     child: Align(
@@ -259,7 +259,7 @@ class Workout extends StatelessWidget {
                                   Align(
                                     alignment: Alignment.bottomLeft,
                                     child: Padding(
-                                      padding: const EdgeInsets.all(8.0),
+                                      padding: EdgeInsets.all(8.0),
                                       child: Text(
                                         'Squat\nChallenge',
                                         style: TextStyle(
@@ -288,7 +288,7 @@ class Workout extends StatelessWidget {
                     style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
                   )),
             ),
-            Expanded(
+            const Expanded(
               child: SingleChildScrollView(
                 scrollDirection: Axis.vertical,
                 child: Column(
@@ -330,7 +330,7 @@ class Workout extends StatelessWidget {
                 ),
               ),
             ),
-            CustomNavBar()
+            const CustomNavBar()
           ],
         ),
       ),

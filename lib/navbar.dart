@@ -19,7 +19,7 @@ class _CustomNavBarState extends State<CustomNavBar> {
       child: Container(
         width: 380,
         height: 60,
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           color: Color(0xFF192126),
           borderRadius: BorderRadius.all(Radius.circular(60.0)),
         ),
@@ -38,13 +38,13 @@ class _CustomNavBarState extends State<CustomNavBar> {
                 children: [
                   Icon(
                     _getIconForIndex(index),
-                    color: isSelected ? Color(0xFFBBF246) : Colors.white,
+                    color: isSelected ? const Color(0xFFBBF246) : Colors.white,
                   ),
                   SizedBox(height: isSelected ? 5 : 0),
                   if (isSelected)
                     Text(
                       _getLabelForIndex(index),
-                      style: TextStyle(
+                      style: const TextStyle(
                         color: Color(0xFFBBF246),
                         fontSize: 12,
                       ),
