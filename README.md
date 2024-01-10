@@ -39,7 +39,7 @@ flutter pub get
 flutter run
 ```
 
-##Screenshots
+## Screenshots
 ![image](https://github.com/soumiguria/Flutter_Assignment/assets/69115226/e5953f87-903b-49fb-8db8-237fbdb88a5d)
 ![image](https://github.com/soumiguria/Flutter_Assignment/assets/69115226/01647667-6ef7-4995-85de-2d04402ef4ce)
 ![image](https://github.com/soumiguria/Flutter_Assignment/assets/69115226/f46f6000-c4c9-49d4-b444-6bdc75c3aa3e)
@@ -47,7 +47,7 @@ flutter run
 
 
 
-##Dependencies
+## Dependencies
 
 This project uses the following dependencies:
 
