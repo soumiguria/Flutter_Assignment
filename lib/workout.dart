@@ -175,7 +175,7 @@ class Workout extends StatelessWidget {
                                     child: Align(
                                       alignment: Alignment.center,
                                       child: Icon(
-                                        Icons.heat_pump_outlined,
+                                        Icons.fireplace_outlined,
                                         color: Colors.grey.shade200,
                                         size:
                                             80, 
@@ -249,7 +249,7 @@ class Workout extends StatelessWidget {
                                     child: Align(
                                       alignment: Alignment.center,
                                       child: Icon(
-                                        Icons.sports_gymnastics_outlined,
+                                        Icons.local_drink_outlined,
                                         color: Color(0xFFBBF246),
                                         size:
                                             80, 
