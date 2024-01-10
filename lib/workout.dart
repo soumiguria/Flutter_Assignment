@@ -45,8 +45,8 @@ class Workout extends StatelessWidget {
                     child: Column(
                       children: [
                         Padding(
-                          padding:
-                              EdgeInsets.only(top: 25.0, left: 20.0, right: 20.0),
+                          padding: EdgeInsets.only(
+                              top: 25.0, left: 20.0, right: 20.0),
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
@@ -302,27 +302,66 @@ class Workout extends StatelessWidget {
                 ),
               ),
             ),
+            // Positioned(
+            //   bottom: 0,
+            //   left: 0,
+            //   right: 0,
+            //   child: BottomNavigationBar(
+            //     items: const [
+            //       BottomNavigationBarItem(
+            //         icon: Icon(Icons.home_filled),
+            //         label: 'Home',
+            //       ),
+            //       BottomNavigationBarItem(
+            //         icon: Icon(Icons.explore),
+            //         label: 'Explore',
+            //       ),
+            //       BottomNavigationBarItem(
+            //         icon: Icon(Icons.graphic_eq_outlined),
+            //         label: 'Statistics',
+            //       ),
+            //       BottomNavigationBarItem(
+            //         icon: Icon(Icons.person),
+            //         label: 'Profile',
+            //       ),
+            //     ],
+            //   ),
+            // ),
+
             Positioned(
               bottom: 0,
               left: 0,
               right: 0,
-              child: BottomNavigationBar(
-                items: const [
-                  BottomNavigationBarItem(
-                    icon: Icon(Icons.home),
-                    label: 'Home',
-                  ),
-                  BottomNavigationBarItem(
-                    icon: Icon(Icons.search),
-                    label: 'Search',
-                  ),
-                  BottomNavigationBarItem(
-                    icon: Icon(Icons.person),
-                    label: 'Profile',
-                  ),
-                ],
+              child: Container(
+                width: 380,
+                decoration: BoxDecoration(
+                  color: Color(0xFF192126),
+                  borderRadius: BorderRadius.all(Radius.circular(40.0)),
+                ),
+                child: BottomNavigationBar(
+                  backgroundColor: Colors.transparent,
+                  items: const [
+                    BottomNavigationBarItem(
+                      icon: Icon(Icons.home),
+                      label: 'Home',
+                    ),
+                    BottomNavigationBarItem(
+                      icon: Icon(Icons.search),
+                      label: 'Search',
+                    ),
+                    BottomNavigationBarItem(
+                      icon: Icon(Icons.person),
+                      label: 'Profile',
+                    ),
+                    // BottomNavigationBarItem(
+                    //   icon: Icon(Icons.add), // Additional icon
+                    //   label: 'Add',
+                    // ),
+                  ],
+                ),
               ),
             ),
+
           ],
         ),
       ),
