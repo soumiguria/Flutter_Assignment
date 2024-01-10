@@ -234,7 +234,7 @@ class Workout extends StatelessWidget {
                                 ],
                               ),
                             ),
-
+                            
                             const SizedBox(width: 10),
                             Container(
                               height: 100,
@@ -271,8 +271,6 @@ class Workout extends StatelessWidget {
                                 ],
                               ),
                             ),
-
-
                           ],
                         ),
                       ),
